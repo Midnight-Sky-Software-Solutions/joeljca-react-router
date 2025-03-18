@@ -16,7 +16,7 @@ export default function Skills() {
 
 function Skill({ children }: { children: ReactNode }) {
   return (
-    <div className="flex flex-col items-center py-6">
+    <div className="flex flex-col items-center py-6 animate-scale-in-center">
       <div className="w-20 text-teal-500">
         <CheckCircleIcon />
       </div>
