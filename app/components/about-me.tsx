@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center" id="about">
         <div className="max-w-6xl grow">
           <h2 className="text-4xl font-serif py-6">About Me</h2>
           <div className="flex flex-col gap-5">
