@@ -9,7 +9,7 @@ const navItems = [
 
 export default function Header() {
   return (
-    <div className="flex justify-center shadow-md">
+    <div className="flex justify-center shadow-md sticky top-0 bg-white">
       <div className="max-w-6xl grow flex gap-10">
         <Link to="#" className="flex items-center font-bold text-lg">
           Joel Alexander Johnston
