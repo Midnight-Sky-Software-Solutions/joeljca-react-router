@@ -1,7 +1,7 @@
 export default function Portfolio() {
   return (
     <div className="flex justify-center" id="portfolio">
-      <div className="max-w-6xl grow mt-6">
+      <div className="max-w-6xl grow mt-6 px-5">
         <h2 className="text-4xl font-serif py-6">Portfolio</h2>
         <div className="grid sm:grid-cols-2 gap-8">
           <div className="bg-[url(/strength-journal.png)] bg-cover bg-center h-100">
