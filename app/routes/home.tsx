@@ -4,6 +4,7 @@ import Hero from "~/components/hero";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import Skills from "~/components/skills";
 import AboutMe from "~/components/about-me";
+import Portfolio from "~/components/portfolio";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <AboutMe />
+      <Portfolio />
     </>
   );
 }

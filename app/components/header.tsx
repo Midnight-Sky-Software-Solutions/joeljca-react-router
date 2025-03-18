@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 const navItems = [
   { name: 'About Me', to: '/#about', external: false },
-  { name: 'Portfolio', to: '#', external: false },
+  { name: 'Portfolio', to: '/#portfolio', external: false },
   { name: 'Blog', to: '#', external: false },
   { name: 'Source', to: '#', external: true },
 ];
@@ -17,7 +17,7 @@ export default function Header() {
         <nav>
           <ul className="flex gap-10 py-5 text-lg">
             {navItems.map(item => (
-              <li>
+              <li key={item.name}>
                 <Link to={item.to}>
                   {item.name}
                 </Link>

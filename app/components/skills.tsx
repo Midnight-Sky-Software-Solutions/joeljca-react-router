@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 export default function Skills() {
   return (
     <div className="flex justify-center">
-      <div className="max-w-6xl grow flex gap-10 grid grid-cols-4">
+      <div className="max-w-6xl grow grid sm:grid-cols-2 md:grid-cols-4">
         <Skill>React</Skill>
         <Skill>ASP.NET Web API</Skill>
         <Skill>SQL Server</Skill>
