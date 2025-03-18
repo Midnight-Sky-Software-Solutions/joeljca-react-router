@@ -5,11 +5,12 @@ import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import Skills from "~/components/skills";
 import AboutMe from "~/components/about-me";
 import Portfolio from "~/components/portfolio";
+import Footer from "~/components/footer";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Joel Alexander Johnston | Home" },
+    { name: "description", content: "Developer - React | ASP.NET Web API | SQL Server | CRM" },
   ];
 }
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Skills />
       <AboutMe />
       <Portfolio />
+      <Footer />
     </>
   );
 }
