@@ -3,8 +3,8 @@ import { Link } from "react-router";
 export default function Footer() {
   return (
     <div className="flex justify-center bg-blue-grey-800 mt-16 py-8">
-      <div className="max-w-6xl grow grid grid-cols-4">
-        <div className="col-span-2 text-white flex flex-col gap-3">
+      <div className="max-w-6xl grow grid sm:grid-cols-4 gap-8 md:gap-0">
+        <div className="md:col-span-2 text-white flex flex-col gap-3">
           <div className="font-bold">Midnight Sky Software Solutions Ltd.</div>
           <div>I was born to run~</div>
         </div>
