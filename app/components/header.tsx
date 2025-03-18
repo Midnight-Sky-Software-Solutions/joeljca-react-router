@@ -35,19 +35,17 @@ export default function Header() {
             <Bars3Icon />
           </button>
         </div>
-        {showNav && (
-          <nav className="sm:hidden">
-            <ul className="flex flex-col items-center gap-5 py-5 text-lg">
-              {navItems.map(item => (
-                <li key={item.name}>
-                  <Link to={item.to}>
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        )}
+        <nav className={`sm:hidden overflow-hidden transition transition-[height] duration-300 ease-in-out ${!showNav ? 'h-0' : 'h-56'}`}>
+          <ul className="flex flex-col items-center gap-5 py-5 text-lg">
+            {navItems.map(item => (
+              <li key={item.name}>
+                <Link to={item.to}>
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </div>
   );
