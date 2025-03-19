@@ -12,7 +12,7 @@ const navItems = [
 export default function Header() {
   const [showNav, setShowNav] = useState(false);
   return (
-    <div className="flex justify-center shadow-md sticky top-0 bg-white">
+    <div className="flex justify-center shadow-md sticky top-0 bg-white z-40">
       <div className="max-w-6xl grow sm:flex gap-10 px-5">
         <Link to="#" className="flex items-center justify-center sm:justify-left font-bold text-lg">
           Joel Alexander Johnston
