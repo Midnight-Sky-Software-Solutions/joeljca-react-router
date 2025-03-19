@@ -1,6 +1,18 @@
+import { motion } from "motion/react";
+
 export default function Portfolio() {
   return (
-    <div className="flex justify-center" id="portfolio">
+    <motion.div 
+      className="flex justify-center" 
+      id="portfolio"
+      initial={{ opacity: 0, translateZ: "-160px", rotateY: "87deg"  }}
+      whileInView={{ opacity: 1, translateZ: 0, rotateY: 0 }}
+      transition={{
+        duration: 0.4,
+        scale: { type: "spring", visualDuration: 0.4, bounce: 0.0 },
+      }}
+      viewport={{ once: true }}
+    >
       <div className="max-w-6xl grow mt-6 px-5">
         <h2 className="text-4xl font-serif py-6">Portfolio</h2>
         <div className="grid sm:grid-cols-2 gap-8">
@@ -32,6 +44,6 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
