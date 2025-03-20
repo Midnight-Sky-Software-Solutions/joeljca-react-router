@@ -1,0 +1,1 @@
+export const WP_API_URL = 'https://public-api.wordpress.com/rest/v1.1/sites/wp.joelj.ca';
