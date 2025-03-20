@@ -21,7 +21,7 @@ export default function Header() {
           <ul className="flex gap-10 py-5 text-lg">
             {navItems.map(item => (
               <li key={item.name}>
-                <Link to={item.to}>
+                <Link to={item.to} target={item.external ? '_blank' : ''}>
                   {item.name}
                 </Link>
               </li>
