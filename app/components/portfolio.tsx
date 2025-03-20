@@ -21,11 +21,15 @@ export default function Portfolio() {
           <div className="flex flex-col gap-5">
             <h3 className="text-2xl font-serif">Strength Journal</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur mollis commodo. Suspendisse eu ultricies purus, id porttitor nisl. Nullam gravida urna nisl, in fringilla lacus imperdiet ut. Quisque sit amet nulla faucibus, egestas nibh quis, malesuada leo. Donec efficitur tincidunt nibh at congue. Vestibulum bibendum ac enim vel viverra. Ut at risus non magna feugiat vulputate.
+              A strength logging app built with React Router, ASP.NET Web API and SQL Server.
             </p>
-            <div className="mb-5">
-              <button className="border-2 p-2 border-teal-500 text-teal-500 rounded-3xl">Demo</button>
-              <button className="border-2 p-2 border-teal-500 text-teal-500 rounded-3xl ml-2">Source</button>
+            <div>
+              {/* <a href="https://demo.joelj.ca" target="_blank">
+                <button className="border-2 p-2 border-teal-500 text-teal-500 rounded-3xl cursor-pointer">Demo</button>
+              </a> */}
+              <a href="https://github.com/Midnight-Sky-Software-Solutions/strength_journal_poc2" target="_blank">
+                <button className="border-2 p-2 border-teal-500 text-teal-500 rounded-3xl ml-2 cursor-pointer">Source</button>
+              </a>
             </div>
           </div>
         </div>
@@ -35,11 +39,15 @@ export default function Portfolio() {
           <div className="flex flex-col gap-5">
             <h3 className="text-2xl font-serif">The Association of Home Pizza Cooks</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur mollis commodo. Suspendisse eu ultricies purus, id porttitor nisl. Nullam gravida urna nisl, in fringilla lacus imperdiet ut. Quisque sit amet nulla faucibus, egestas nibh quis, malesuada leo. Donec efficitur tincidunt nibh at congue. Vestibulum bibendum ac enim vel viverra. Ut at risus non magna feugiat vulputate.
+              An association website built with Next.js and Wild Apricot.
             </p>
             <div>
-              <button className="border-2 p-2 border-teal-500 text-teal-500 rounded-3xl">Demo</button>
-              <button className="border-2 p-2 border-teal-500 text-teal-500 rounded-3xl ml-2">Source</button>
+              <a href="https://demo.joelj.ca" target="_blank">
+                <button className="border-2 p-2 border-teal-500 text-teal-500 rounded-3xl cursor-pointer">Demo</button>
+              </a>
+              <a href="https://github.com/Midnight-Sky-Software-Solutions/ahpc_poc7" target="_blank">
+                <button className="border-2 p-2 border-teal-500 text-teal-500 rounded-3xl ml-2 cursor-pointer">Source</button>
+              </a>
             </div>
           </div>
         </div>
