@@ -2,7 +2,7 @@ import useSWRInfinite, { type SWRInfiniteKeyLoader } from "swr/infinite";
 import type { Route } from "./+types/blog";
 import type { Fetcher } from "swr";
 import { WP_API_URL } from "~/lib/wordpress";
-import { Link, useSearchParams } from "react-router";
+import { Link, NavLink, useSearchParams } from "react-router";
 import Spinner from "~/components/spinner";
 
 export function meta({ }: Route.MetaArgs) {
@@ -62,9 +62,9 @@ function BlogItem(props : {
 }) {
   return (
     <div className="flex flex-col gap-2">
-      <Link to={`/blog/${props.slug}`}>
+      <NavLink to={`/blog/${props.slug}`} className={({isPending}) => isPending ? 'animate-pulse' : ''}>
         <h3 className="text-2xl font-serif">{props.title}</h3>
-      </Link>
+      </NavLink>
       <p className="text-blue-grey-500">{props.date.toDateString()}</p>
       <p className="text-blue-grey-700" dangerouslySetInnerHTML={{__html: props.excerpt}}>
       </p>
