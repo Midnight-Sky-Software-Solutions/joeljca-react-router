@@ -33,7 +33,8 @@ export default function Blog() {
         <h2 className="text-4xl font-serif py-6">Blog</h2>
         <div className="flex flex-col">
           {data!.map(data => data.posts.map((post: any) => (
-            <BlogItem 
+            <BlogItem
+              key={post.slug}
               title={post.title}
               date={new Date(post.date)}
               excerpt={post.excerpt}

@@ -1,6 +1,6 @@
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import { useState } from "react";
-import { Link } from "react-router";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router";
 
 const navItems = [
   { name: 'About Me', to: '/#about', external: false },
@@ -11,6 +11,10 @@ const navItems = [
 
 export default function Header() {
   const [showNav, setShowNav] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    setShowNav(false);
+  }, [location]);
   return (
     <div className="flex justify-center shadow-md sticky top-0 bg-white z-40">
       <div className="max-w-6xl grow sm:flex gap-10 px-5">
