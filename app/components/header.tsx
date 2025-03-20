@@ -5,8 +5,8 @@ import { Link } from "react-router";
 const navItems = [
   { name: 'About Me', to: '/#about', external: false },
   { name: 'Portfolio', to: '/#portfolio', external: false },
-  { name: 'Blog', to: '#', external: false },
-  { name: 'Source', to: '#', external: true },
+  { name: 'Blog', to: '/blog', external: false },
+  { name: 'Source', to: 'https://github.com/Midnight-Sky-Software-Solutions/joeljca-react-router', external: true },
 ];
 
 export default function Header() {
@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <div className="flex justify-center shadow-md sticky top-0 bg-white z-40">
       <div className="max-w-6xl grow sm:flex gap-10 px-5">
-        <Link to="#" className="flex items-center justify-center sm:justify-left font-bold text-lg">
+        <Link to="/" className="flex items-center justify-center sm:justify-left font-bold text-lg">
           Joel Alexander Johnston
         </Link>
         <nav className="hidden sm:block">
