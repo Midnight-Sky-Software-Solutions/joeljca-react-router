@@ -3,8 +3,7 @@ import { motion } from "motion/react";
 export default function AboutMe() {
   return (
     <motion.div
-      className="flex 
-      justify-center"
+      className="flex justify-center"
       id="about"
       initial={{ opacity: 0, translateZ: "-160px", rotateY: "87deg"  }}
       whileInView={{ opacity: 1, translateZ: 0, rotateY: 0 }}
