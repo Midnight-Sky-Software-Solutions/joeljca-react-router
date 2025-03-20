@@ -2,7 +2,8 @@ import useSWRInfinite, { type SWRInfiniteKeyLoader } from "swr/infinite";
 import type { Route } from "./+types/blog";
 import type { Fetcher } from "swr";
 import { WP_API_URL } from "~/lib/wordpress";
-import { Link } from "react-router";
+import { Link, useSearchParams } from "react-router";
+import Spinner from "~/components/spinner";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -23,9 +24,15 @@ const getKey: SWRInfiniteKeyLoader = (pageIndex, previousPageData) => {
 
 export default function Blog() {
   const { data, error, isLoading, size, setSize } = useSWRInfinite(getKey, fetcher);
-
+  const [searchParams] = useSearchParams();
   if (error) throw error;
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading || searchParams.has('loading')) return (
+    <div className="flex justify-center">
+      <div className="max-w-6xl grow px-5 py-5 justify-center flex">
+        <Spinner />
+      </div>
+    </div>
+  );
 
   return (
     <div className="flex justify-center">
