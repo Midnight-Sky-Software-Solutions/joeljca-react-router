@@ -21,7 +21,8 @@ export default function Portfolio() {
           <div className="flex flex-col gap-5">
             <h3 className="text-2xl font-serif">Strength Journal</h3>
             <p>
-              A strength logging app built with React Router, ASP.NET Web API and SQL Server.
+              A strength logging app built with React Router, ASP.NET Web API and SQL Server. My goal with the technical design was to implement a light-weight data access layer with the Dapper micro-ORM. All SQL queries were hand-written, allowing
+              me to leverage the full power of T-SQL.
             </p>
             <div>
               {/* <a href="https://demo.joelj.ca" target="_blank">
@@ -39,7 +40,7 @@ export default function Portfolio() {
           <div className="flex flex-col gap-5">
             <h3 className="text-2xl font-serif">The Association of Home Pizza Cooks</h3>
             <p>
-              An association website built with Next.js and Wild Apricot.
+              An association website built with React and Wild Apricot. This Proof of Concept demonstrate a Next.js application integrating with WildApricot and WordPress by consuming their respective Web APIs.  The major technical challenge was implementing Single Sign On with WildApricot.
             </p>
             <div>
               <a href="https://demo.joelj.ca" target="_blank">
