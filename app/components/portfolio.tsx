@@ -25,9 +25,9 @@ export default function Portfolio() {
               me to leverage the full power of T-SQL.
             </p>
             <div>
-              {/* <a href="https://demo.joelj.ca" target="_blank">
+              <a href="https://strengthjournal.joelj.ca" target="_blank">
                 <button className="border-2 p-2 border-teal-500 text-teal-500 rounded-3xl cursor-pointer">Demo</button>
-              </a> */}
+              </a>
               <a href="https://github.com/Midnight-Sky-Software-Solutions/strength_journal_poc2" target="_blank">
                 <button className="border-2 p-2 border-teal-500 text-teal-500 rounded-3xl ml-2 cursor-pointer">Source</button>
               </a>
